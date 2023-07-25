@@ -1,1 +1,171 @@
 
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (master)
+$ git remote add origin https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+error: remote origin already exists.
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (master)
+$ git remote
+origin
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+  Push  URL: https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+  HEAD branch: (unknown)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (master)
+$ git branch -m Main
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git push -u origin main
+fatal: main cannot be resolved to branch
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git push -u origin Main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 373 bytes | 186.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+ * [new branch]      Main -> Main
+branch 'Main' set up to track 'origin/Main'.
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git dir
+git: 'dir' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git diff
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ cd dir3
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice/dir3 (Main)
+$ echo > filedir3.txt
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice/dir3 (Main)
+$ cd ..
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ ls
+dir1/  dir2/  dir3/  main.txt
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git diff
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git status
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git commit -m "Adding 3rd Directory to this file "
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git commit
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git status
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git status
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git status
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git commit -m "Adding 3rd Directory to this file"
+On branch Main
+Your branch is up to date with 'origin/Main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git add .
+warning: in the working copy of 'dir3/filedir3.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git commit -m "Adding 3rd Directory to this file"
+[Main 5810b04] Adding 3rd Directory to this file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dir3/filedir3.txt
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git status
+On branch Main
+Your branch is ahead of 'origin/Main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$ git push -u origin Main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 191.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+   a48b39f..5810b04  Main -> Main
+branch 'Main' set up to track 'origin/Main'.
+
+ADMIN@DESKTOP-T83MH19 MINGW64 ~/Desktop/Git Practice (Main)
+$
