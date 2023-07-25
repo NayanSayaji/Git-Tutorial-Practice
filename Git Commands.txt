@@ -1,21 +1,25 @@
-$ git config --global user.name "Add Your Name Inside This Qoutation"
+# Set your global Git configuration with your name and email
+git config --global user.name "Add Your Name Inside This Quotation"
+git config --global user.email "Add Your Email Inside This Quotation"
 
-$ git config --global user.email "Add Your Email Inside This Qoutation"
+# Initialize a new Git repository in your local project directory
+git init
 
-$ git init
+# Check the status of your Git repository
+git status
 
-$ git status
+# Stage all changes in the repository for the next commit
+git add .
 
-$ git add . 
+# Create a commit with a message or description
+git commit -m "message or description of your commit"
 
-$ git commit -m "message or description of your commit" 
+# Add a remote repository link to your local repository
+# Replace "YourRepositoryLink" with the actual link to your repository
+git remote add origin YourRepositoryLink
 
-$ git remote add origin YourRepositaryLink
+# Rename the default branch to 'main'
+git branch -m main
 
-create a empty repostitory for above command first..
-
-for eg . Empty Repo => Git-Tutorial-Practice
-
-repo link => https://github.com/NayanSayaji/Git-Tutorial-Practice.git
-
-$ git 
+# Push the changes to the remote repository
+git push -u origin main
