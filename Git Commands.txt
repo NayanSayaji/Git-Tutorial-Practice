@@ -1,0 +1,21 @@
+$ git config --global user.name "Add Your Name Inside This Qoutation"
+
+$ git config --global user.email "Add Your Email Inside This Qoutation"
+
+$ git init
+
+$ git status
+
+$ git add . 
+
+$ git commit -m "message or description of your commit" 
+
+$ git remote add origin YourRepositaryLink
+
+create a empty repostitory for above command first..
+
+for eg . Empty Repo => Git-Tutorial-Practice
+
+repo link => https://github.com/NayanSayaji/Git-Tutorial-Practice.git
+
+$ git 
